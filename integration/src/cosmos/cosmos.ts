@@ -1,9 +1,5 @@
 import * as core from "@shapeshiftoss/hdwallet-core";
 
-import tx_unsigned_transfer from "./tx01.mainnet.cosmos.json";
-import tx_signed_trasnfer from "./tx01.mainnet.cosmos.signed.json";
-
-//delgation
 import tx_unsigned_delegation from "./tx01.mainnet.cosmos.delegate.json";
 import tx_signed_delegation from "./tx01.mainnet.cosmos.delegate.signed.json";
 
@@ -11,6 +7,7 @@ import tx_unsigned_undelegate_cosmos from "./tx01.mainnet.cosmos.undelegate.json
 import tx_signed_undelegate_cosmos from "./tx01.mainnet.cosmos.undelegate.signed.json";
 
 import tx_unsigned_redelegate_cosmos from "./tx01.mainnet.cosmos.undelegate.json";
+import tx_signed_undelegate_cosmos from "./tx01.mainnet.cosmos.undelegate.signed.json";
 import tx_signed_redelegate_cosmos from "./tx01.mainnet.cosmos.undelegate.signed.json";
 
 import tx_unsigned_rewards_cosmos from "./tx01.mainnet.cosmos.rewards.json";

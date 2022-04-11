@@ -1,5 +1,5 @@
-import * as CosmosMessages from "@keepkey/device-protocol/lib/messages-cosmos_pb";
 import * as Messages from "@keepkey/device-protocol/lib/messages_pb";
+import * as CosmosMessages from "@keepkey/device-protocol/lib/messages-cosmos_pb";
 import * as core from "@shapeshiftoss/hdwallet-core";
 import _ from "lodash";
 
@@ -30,7 +30,7 @@ export async function cosmosSignTx(transport: Transport, msg: core.CosmosSignTx)
       omitLock: true,
     });
 
-    for (let m of msg.tx.msg) {
+    for (const m of msg.tx.msg) {
       if (resp.message_enum !== Messages.MessageType.MESSAGETYPE_COSMOSMSGREQUEST) {
         throw new Error(`cosmos: unexpected response ${resp.message_type}`);
       }
